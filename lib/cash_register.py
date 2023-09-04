@@ -16,8 +16,8 @@ class CashRegister:
     def apply_discount(self):
         if self.discount > 0:
             discount_amount = (self.discount / 100) * self.total
-            self.total -= discount_amount  # Reduce the total by the discount amount
-            message = f'After the discount, the total comes to ${self.total:.2f}'  # Format the message with two decimal places
+            self.total -= discount_amount  
+            message = f'After the discount, the total comes to ${self.total:.2f}' 
             print(message)
             return message
         else:
